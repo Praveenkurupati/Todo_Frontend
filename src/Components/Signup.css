@@ -1,0 +1,649 @@
+/* Common styles for all screen sizes */
+body {
+  background-color: RoyalBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+.save-button-figma-div {
+  display: flex;
+  color: #FFFFFF;
+  width: 180px;
+  height: 52px;
+  padding: 17px 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border-color: #112F6E;
+  box-shadow: none;
+  background: #112F6E;
+}
+
+.clear-button-figma-div {
+  display: flex;
+  width: 180px;
+  height: 52px;
+  padding: 17px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 2px solid var(--primary, #5570F1);
+  color: var(--primary, #5570F1);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 10px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+/* Responsive styles for tablet screens (greater than or equal to 768px) */
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .SignUpForm {
+    width: 60%;
+    height: 60%;
+    border-radius: 5%;
+  }
+}
+
+/* Responsive styles for desktop screens (greater than or equal to 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+
+  /* Switch the order for desktop screens */
+  .SignUpForm {
+    flex-direction: row-reverse;
+    height: 700px;
+    width:700px
+  }
+
+  .SignUpForm .form-half {
+    border-radius: 50% 0 0 50%; /* Update the border-radius for the form-half */
+  }
+
+  .SignUpForm .image-half {
+    border-radius: 50% 0 0 50%; /* Update the border-radius for the image-half */
+  }
+}
+
+/* CSS for the SignUpForm container */
+.SignUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  transition: width 0.3s, height 0.3s;
+  background: white;
+  border-radius: 5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* CSS for the right half (form-half) */
+.SignUpForm .form-half {
+  padding: 20px;
+  background-color: white;
+  border-radius: 0 50% 50% 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* CSS for the left half (image-half) */
+.SignUpForm .image-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006AB0;
+  border-radius: 50% 0 0 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* CSS for the user image */
+.SignUpForm .user-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+/* CSS for the left half (image-half) */
+.image-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006AB0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* CSS for the user image */
+.user-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.Fields-Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.table-header {
+  background-color: #112F6E;
+  color: white;
+}
+
+select.form-select {
+  box-shadow: none;
+}
+
+
+.clear-button-figma-div {
+  display: flex;
+  width: 180px;
+  height: 52px;
+  padding: 17px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 2px solid var(--primary, #5570F1);
+  color: var(--primary, #5570F1);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px 10px;
+}
+
+label.form-label {
+  color: var(--black-4, #5E6366);
+  /* Input/Label */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input.inputDate-figma.form-control {
+
+  display: flex;
+  height: 52px;
+  color: #ABAFB1;
+  /* padding: 8px 16px; */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  /* flex-direction: column; */
+  /* gap: 10px; */
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+  border: none;
+}
+
+input.inputDate-figma.form-control::placeholder {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+
+/* .select-with-icon {
+    position: relative;
+  }
+  
+  */
+
+
+select.form-select.dropdown {
+  /* position: relative; */
+  box-shadow: none;
+  display: flex;
+  height: 52px;
+  color: var(--black-4, #5E6366);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 8px 36px 8px 16px;
+  flex-direction: row;
+  align-items: center;
+  /* color:#ABAFB1;
+    padding: 8px 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400; */
+  line-height: 1.5;
+  gap: 10px;
+  align-self: stretch;
+  background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+  border-radius: 8px;
+  border: none;
+}
+
+select.form-select.dropdown::placeholder {
+  color: var(--black-4, #5E6366);
+  /* Input/Placeholder */
+  font-family: Inter;
+  /* padding-top: 20px; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chevron-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.chevron-icons{
+  position: relative;
+  top: -40%;
+  right: -30rem;
+  transform: translateY(-160%);
+  pointer-events: none;
+ 
+}
+
+
+@media (max-width: 1024px) {
+  .chevron-icons {
+    right: -7rem;
+  }
+}
+@media (max-width: 1200px) {
+  .chevron-icons {
+    right: -7.5rem;
+  }
+}
+
+
+input.input-figma.form-control {
+  display: flex;
+  height: 52px;
+  color: #ABAFB1;
+  padding: 8px 16px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px !important;
+  background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+  border: none;
+}
+
+
+
+
+input.input-figma.form-control::placeholder {
+  color: #ABAFB1;
+}
+
+.save-button-figma-div {
+  display: flex;
+  color: #FFFFFF;
+  width: 180px;
+  height: 52px;
+  padding: 17px 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border-color: #112F6E;
+  box-shadow: none;
+  background: #112F6E;
+}
+.data-button-figma-div {
+  display: flex;
+  color: #FFFFFF;
+  width: 120px;
+  height: 42px;
+  padding: 17px 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border-color: #112F6E;
+  box-shadow: none;
+  background: #112F6E;
+  margin-left: 120px;
+}
+.paid-button-figma-div {
+  display: flex;
+  color: #FFFFFF;
+  width: 80px;
+  height: 30px;
+  padding: 17px 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border-color: #112F6E;
+  box-shadow: none;
+  background: #112F6E;
+}
+
+
+.page-heading {
+  color: #112F6E;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.page-Subheading {
+  color: #112F6E;
+  margin-left: 24px;
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+select.form-select.dropdown {
+  /* position: relative; */
+  box-shadow: none;
+  display: flex;
+  height: 52px;
+  color: var(--black-4, #5E6366);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 8px 36px 8px 16px;
+  /* color:#ABAFB1;
+    padding: 8px 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400; */
+    line-height: 1.5;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+    border-radius: 8px;
+    border:none;
+      }
+  
+      select.form-select.dropdown::placeholder {
+        color: var(--black-4, #5E6366);
+  /* Input/Placeholder */
+  font-family: Inter;
+  /* padding-top: 20px; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+      }
+  
+      .chevron-icon {
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+  
+      input.input-figma.form-control{
+        display: flex;
+      height: 52px;
+      color:#ABAFB1;
+      padding: 8px 16px;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      align-self: stretch;
+      border-radius: 8px;
+      background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+      /* border-radius: 0px; */
+      border:none;
+        }
+      
+        input.input-figma.form-control::placeholder{
+          color:#ABAFB1;
+        }
+  
+        .table-header{
+          background-color: #112F6E;
+          color: white;
+          }
+        
+          select.form-select{
+            box-shadow: none;
+          }
+        
+        
+          .clear-button-figma-div{
+            display: flex;
+        width: 180px;
+        height: 52px;
+        padding: 17px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        border: 2px solid var(--primary, #5570F1);
+        color: var(--primary, #5570F1);
+        text-align: center;
+        /* Paragraph 1/Regular */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px 10px;
+          }
+        
+        
+          .save-button-figma-div{
+            display: flex;
+            color:#FFFFFF;
+            width: 180px;
+            height: 52px;
+            padding: 17px 16px;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            border-color: #112F6E;
+            box-shadow: none;
+        background: #112F6E;
+          }
+        
+          
+          .page-heading{
+            color: #112F6E;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+          }
+
+
+          input.inputDate-figma.form-control{
+
+            display: flex;
+          height: 52px;
+          color:#ABAFB1;
+          /* padding: 8px 16px; */
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          /* flex-direction: column; */
+          /* gap: 10px; */
+          align-self: stretch;
+          border-radius: 8px;
+          background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+          /* border-radius: 0px; */
+          border:none;
+            }
+          
+            
+
+
+.chevron-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+input.input-figma.form-control {
+  display: flex;
+  height: 52px;
+  color: #ABAFB1;
+  padding: 8px 16px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+  border-radius: 0px;
+  border: none;
+}
+
+input.input-figma.form-control::placeholder {
+  color: #ABAFB1;
+}
+
+.table-header {
+  background-color: #112F6E;
+  color: white;
+}
+
+select.form-select {
+  box-shadow: none;
+}
+
+.was-validated .form-control:invalid:not(:focus),
+.was-validated .form-control:valid:not(:focus) {
+  background-image: none;
+}
+
+.was-validated .form-control:focus:invalid,
+.was-validated .form-control:focus:valid {
+  background-image: none;
+  box-shadow: none;
+}
+
+
+
+.page-heading {
+  color: #112F6E;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+input.inputDate-figma.form-control {
+
+  display: flex;
+  height: 52px;
+  color: #ABAFB1;
+  /* padding: 8px 16px; */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  /* flex-direction: column; */
+  /* gap: 10px; */
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+  border: none;
+}
+
+
+.headerContent {
+  font-size: 16px;
+  font-weight: bold;
+}

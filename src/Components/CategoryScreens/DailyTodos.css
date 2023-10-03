@@ -1,0 +1,71 @@
+/* DailyTodos.css */
+
+.TodoListTable {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.TodoListTable p {
+  font-size: 16px;
+}
+
+/* Style TaskBar components within the DailyTodos component */
+.TaskBar {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.TaskBar:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.TaskBar .task-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.TaskBar .date,
+.TaskBar .time {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.TaskBar .task-bar-content {
+  padding: 10px;
+}
+
+.TaskBar .task-bar-headline {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.TaskBar .task-bar-checkbox input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.TaskBar .task-bar-description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.TaskBar .task-bar-edit-icon {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Add more styles as needed */

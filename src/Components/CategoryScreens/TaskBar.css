@@ -1,0 +1,142 @@
+.task-bar-1 {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #302f2f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #add8e6; /* Light Blue */
+  width: 900px;
+}
+
+.task-bar-2 {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #302f2f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #bb05bb; /* Deep Purple */
+  width: 900px;
+}
+
+.task-bar-3 {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #302f2f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #f2ce8d; /* Orange */
+  width: 900px;
+}
+
+.task-bar-4 {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #302f2f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #ffc0cb; /* Light Pink */
+  width: 900px;
+}
+.task-bar-5 {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #302f2f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #e0ffc0; /* Light Pink */
+  width: 900px;
+}
+
+.task-bar {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #302f2f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #bb05bb; /* Deep Purple */
+  width: 900px;
+}
+.task-bar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0077b6; /* A shade of blue (Nordic Blue) */
+  color: #ffffff; /* White text for contrast */
+  padding: 6px;
+  border-radius: 8px;
+  width: 115px;
+  border: 2px solid #000; /* Black border with 2px width */
+}
+
+.task-bar-header .date {
+  font-size: 14px;
+  color: #a7bbc7; /* White text for date */
+}
+
+.task-bar-header .time {
+  font-size: 20px;
+  color: #ffffff; /* Light gray text (Nordic Gray) for time */
+  margin-top: 4px;
+}
+
+.task-bar-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Add margin to each item within .task-bar-content */
+.task-bar-content > * {
+  margin-right: 25px; /* Adjust margin as needed */
+}
+
+/* Remove margin from the last item to avoid extra spacing */
+.task-bar-content > :last-child {
+  margin-right: 0;
+}
+
+.task-bar-headline h1 {
+  font-size: 15px;
+  margin-right: 320px;
+  flex: 1;
+  color: #333;
+}
+.task-bar-headline {
+  font-size: 24px;
+  margin-left: 220px;
+  flex: 1;
+  color: #333;
+}
+
+.task-bar-checkbox input[type="checkbox"] {
+  width: 30px; /* Increase the width */
+  height: 30px; /* Increase the height */
+  /* margin-right: 520px; Reduced margin for spacing */
+  margin-left: -200px;
+  font-size: 54px; /* Increased font size for better visibility */
+}
+
+.task-bar-edit-icon {
+  margin-right: 50px;
+  font-size: 24px; /* Increased font size for better visibility */
+  /* color: #007bff; A shade of blue for the Edit icon */
+}
+
+.task-bar-description {
+  margin-right: 40px; /* Add margin to separate it from other elements */
+  margin-left: -180px;
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+  /* Add other styles as needed */
+}

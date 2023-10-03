@@ -1,0 +1,286 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  body {
+    /* fallback for old browsers */
+    background: #f093fb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+  }
+  
+  
+  input.input-figma.form-control {
+    display: flex;
+    height: 52px;
+    color: #ABAFB1;
+    padding: 8px 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px !important;
+    background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+    border: none;
+  }
+  
+  
+  
+  
+  input.input-figma.form-control::placeholder {
+    color: #ABAFB1;
+  }
+  
+  
+  label.form-label {
+    color: var(--black-4, #5E6366);
+    /* Input/Label */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  input.inputDate-figma.form-control {
+  
+    display: flex;
+    height: 52px;
+    color: #ABAFB1;
+    /* padding: 8px 16px; */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    /* flex-direction: column; */
+    /* gap: 10px; */
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+    border: none;
+  }
+  
+  input.inputDate-figma.form-control::placeholder {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  
+  }
+  
+  
+  .save-button-figma-div {
+    display: flex;
+    color: #FFFFFF;
+    width: 180px;
+    height: 52px;
+    padding: 17px 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border-color: #112F6E;
+    box-shadow: none;
+    background: #112F6E;
+  }
+  
+  .clear-button-figma-div {
+    display: flex;
+    width: 180px;
+    height: 52px;
+    padding: 17px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 2px solid var(--primary, #5570F1);
+    color: var(--primary, #5570F1);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 10px;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  /* input[type=number] {
+    -moz-appearance: textfield;
+  } */
+  
+  button.submit-btn1 {
+    padding: 4px;
+  }
+  
+  
+  
+  select.form-select.dropdown {
+    /* position: relative; */
+    box-shadow: none;
+    display: flex;
+    height: 52px;
+    color: var(--black-4, #5E6366);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 16px;
+    flex-direction: row;
+    align-items: center;
+    /* color:#ABAFB1;
+      padding: 8px 16px;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400; */
+    line-height: 1.5;
+    gap: 10px;
+    align-self: stretch;
+    background: var(--input-default-background, rgba(239, 241, 249, 0.60));
+    border-radius: 8px;
+    border: none;
+  }
+  
+  select.form-select.dropdown::placeholder {
+    color: var(--black-4, #5E6366);
+    /* Input/Placeholder */
+    font-family: Inter;
+    /* padding-top: 20px; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .chevron-icon {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .chevron-icons{
+    position: relative;
+    top: -40%;
+    right: -30rem;
+    transform: translateY(-160%);
+    pointer-events: none;
+   
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; /* Vertically align elements in the row */
+    margin-bottom: 15px; /* Add spacing between form rows */
+  }
+  
+  .Col {
+    margin-right: 10px; /* Add margin to the right of each column */
+  }
+  
+  
+  
+  /* CSS for the task-bar-description */
+  .task-bar-description {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    /* Add other styles as needed */
+  }
+  
+  
+  .createTodo {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text within elements */
+  }
+  
+  
+  
+  .createTodo .mt-4 {
+    margin-top: 20px;
+  }
+  
+  .createTodo button {
+    margin-right: 10px;
+  }
+  
+  /* You can add more styles as needed for your specific design */
+  
+  .TodoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+
+  }
+  
+  /* Additional styles for form fields, labels, buttons, etc. */
+  

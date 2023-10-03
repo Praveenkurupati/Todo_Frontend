@@ -1,0 +1,75 @@
+/* LeftNav.css */
+.left-nav {
+    display: flex;
+    height: 100%;
+  }
+  
+  .sidebar {
+    width: 200px; /* Adjust the width as needed */
+    background-color: #112F6E;
+    color: white;
+    transition: width 0.2s;
+    position: fixed;
+    top: 0;
+    left: 0; /* Align to the left side of the screen */
+    bottom: 0;
+  }
+  
+  .sidebar.collapsed {
+    width: 80px; /* Adjust the width when collapsed */
+  }
+  
+  .toggle-button {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #0A205A;
+  }
+  
+  /* Adjustments for Ant Design components */
+  
+  .ant-layout-sider-children {
+    background-color: white;
+  }
+  
+  div.ant-layout-sider-trigger {
+    background: white !important;
+  }
+  
+  svg {
+    color: black;
+  }
+  
+  li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {
+    background-color: #112F6E;
+  }
+  
+  .ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child .ant-menu-title-content {
+    color: #fff;
+  }
+  
+  span.ant-menu-title-content {
+    color: #000;
+  }
+  
