@@ -6,7 +6,8 @@
 [build]
   base = "public"
   publish = "public"
-  command = "npm run build"
+  command = "/opt/buildhome/.nvm/versions/node/v14.17.6/bin/npm run build"
+
 
 [dev]
   command = "npm start"
