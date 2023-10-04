@@ -6,7 +6,9 @@
 [build]
   base = "public"
   publish = "public"
-  command = "/opt/buildhome/.nvm/versions/node/v14.17.6/bin/npm run build"
+  command = "npm run build"
+  NODE_VERSION = "14"
+
 
 
 [dev]
