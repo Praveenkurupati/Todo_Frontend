@@ -1,4 +1,7 @@
-[[redirects]]
-from = "/*"
-to  = "/public/index.html"
-status = 200
+[build]
+  base = "build"
+  publish = "build"
+  command = "npm run build"
+
+[dev]
+  command = "npm start"
