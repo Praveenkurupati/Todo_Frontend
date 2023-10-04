@@ -1,7 +1,16 @@
+# Build settings
+[build]
+  # Set the base directory for the build (if your app is not in the root directory)
+  base = "public"
+
+  # Build command for your React app
+  command = "npm run build"
+
+  # Publish directory for the built files
+  publish = "public"
+
 [[redirects]]
 from = "/*"
 to  = "/index.html"
 status = 200
 
-[build]
-  base = "public"
