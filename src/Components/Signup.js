@@ -207,9 +207,9 @@ const SignupForm = () => {
               />
             </Row>
           </Col>
-          <Col md={6} className="image-half">
+          {/* <Col md={6} className="image-half">
             <img src={TodoImage} alt="Todo Image" className="user-image" />
-          </Col>
+          </Col> */}
         </Row>
         <div
           style={{
